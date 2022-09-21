@@ -35,26 +35,109 @@ header .container {
 }
 
 header .container #left {
-    width: 641px;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    width: 30%;
     height: 100vh;
     background-color: var(--color-limed-spruce);
 }
 
+.grid-item {
+    border: 1px solid var(--color-baltic-sea);
+    opacity: 0.4;
+}
+
 header .container #right {
-    width: 1280px;
+    width: 70%;
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: linear-gradient(90deg, var(--color-limed-spruce-95) 0%, var(--color-limed-spruce-25) 100%), url('../img/png/annie-spratt-TQSB-suJu1k-unsplash.png');
 }
 
 /* Nav Section */
 
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
     position: absolute;
-    margin: 50px 100px 0 50px;
+    top: 0;
     z-index: 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav .left ul,
+nav .right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.left {
+    width: 25%;
+}
+
+.left ul {
+    justify-content: space-between;
+}
+
+.right {
+    margin-right: 100px;
+
+}
+
+.right ul {
+
+    width: 420px;
+    justify-content: space-evenly;
+}
+
+.left h1,
+.right h1,
+.right p {
+    font-size: 12px;
+}
+
+.quote h1 {
+    margin: 0;
+}
+
+.quote p {
+    text-align: right;
+    margin: 0;
+}
+
+.quote p sup {
+    font-size: 7px;
+}
+
+.quote {
+    display: flex;
+    flex-flow: column;
+    justify-content: inherit;
+    line-height: 20px;
+}
+
+#bag {
+    display: flex;
+    align-items: center;
+}
+
+#connexion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+
+}
+
+.right button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav h1 {
@@ -64,37 +147,7 @@ nav h1 {
     text-transform: uppercase;
 }
 
-nav .left, nav .right, nav ul, nav ul li{
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
 
-nav .left {
-    justify-content: left;
-}
-
-nav .right {
-    align-items: end;
-}
-
-nav .left ul li {
-    list-style: none;
-    margin: 0 50px;
-}
-
-nav .left ul li h1 {
-    margin-top: 20px;
-}
-
-nav .right ul li {
-    list-style: none;
-    margin: 0 20px;
-}
-
-#menu h1{
-    margin-left: 20px;
-}
 
 nav ul li button {
     display: flex;
@@ -112,21 +165,23 @@ nav ul li h1 {
     margin-left: 15.79px;
 }
 
-nav ul .quote {
-    display: flex;
-    flex-direction: column;
-}
 
-nav ul .quote p {
-    float: right;
-}
-
-nav ul .quote * {
-    margin: 0;
-}
 
 .vl {
     border-left: 1px solid var(--color-white);
     height: 50px;
     margin: 0;
+}
+
+.vl {
+    border-left: 0.5px solid var(--color-white);
+    height: 30px;
+    margin: 0;
+    opacity: 0.6;
+}
+
+#line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
