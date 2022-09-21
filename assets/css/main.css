@@ -1,0 +1,47 @@
+/* Import fonts file */
+@import url('../fonts/fonts.css');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    /* Color variables */
+    --color-white: #fff;
+    --color-finch: #58604B;
+    --color-dawn-pink: #EBEBEB;
+    --color-limed-spruce: #33464E;
+    --color-limed-spruce-95: #33464ECC;
+    --color-limed-spruce-25: #33464E4D;
+    --color-baltic-sea: #242D31;
+    --color-pastel-pink: #F9CED2;
+    --color-scarlet: #BE0A1C;
+    --color-dark-jungle-green: #242424;
+    --color-alabaster: #FAFAFA;
+    --color-boulder: #777777;
+    --color-grey-goose: #D1D1D1;
+    --color-shuttle-grey: #5C6D72;
+}
+
+header .container {
+    display: flex;
+}
+
+header .container #left, header .container #right {
+    z-index: 1;
+}
+
+header .container #left {
+    width: 641px;
+    height: 100vh;
+    background-color: var(--color-limed-spruce);
+    box-sizing: border-box;
+}
+
+header .container #right {
+    width: 1280px;
+    height: 100vh;
+    background-image: linear-gradient(90deg, var(--color-limed-spruce-95) 0%, var(--color-limed-spruce-25) 100%), url('../img/png/annie-spratt-TQSB-suJu1k-unsplash.png');
+    box-sizing: border-box;
+}
