@@ -1,0 +1,85 @@
+header {
+    color: var(--color-white);
+}
+
+header .container {
+    display: flex;
+    position: relative;
+}
+
+header .container #left {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 30%;
+    height: 100vh;
+    background-color: var(--color-limed-spruce);
+    z-index: 0;
+}
+
+.grid-item {
+    border: 1px solid var(--color-baltic-sea);
+    opacity: 0.4;
+}
+
+header .container #right {
+    width: 70%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, var(--color-limed-spruce-95) 0%, var(--color-limed-spruce-25) 100%), url('../img/png/annie-spratt-TQSB-suJu1k-unsplash.png');
+}
+
+header .container .more {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 335px;
+    left: 250px;
+}
+
+.more h1 {
+    font-size: 60px;
+    font-style: italic;
+    line-height: 107px;
+    color: var(--color-white); 
+}
+
+.more a {
+    width: 230px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: 'Avenir Book';
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: 0.5px solid var(--color-white);
+    border-radius: 50px;
+    z-index: 9;
+}
+
+.more a img {
+    margin: -2px 10px;
+}
+
+.more a:hover:nth-child(1){
+    padding: 0 0 0 30px;
+}
+
+.pageCount {
+    font-family: 'Avenir Book';
+    position: absolute;
+    top: 80%;
+    left: 3%;
+}
+
+.pageCount img {
+    transform: rotate(90deg);
+}
+
+.pageCount p {
+    margin-left: 15px;
+}
+
+.pageCount * {
+    margin: 15px 0;
+}

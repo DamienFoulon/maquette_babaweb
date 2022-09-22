@@ -1,0 +1,165 @@
+nav {
+    margin-top: 2em;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav .left ul,
+nav .right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.left {
+    width: 30%;
+}
+
+.left ul {
+    justify-content: space-around;
+}
+
+.left ul li {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.left ul li h1 {
+    margin: 2px 0 2px 0;
+}
+
+.right {
+    margin-right: 100px;
+
+}
+
+.right ul {
+
+    width: 420px;
+    justify-content: space-evenly;
+}
+
+.left h1,
+.right h1,
+.right p {
+    font-size: 12px;
+}
+
+.left #logo {
+}
+
+.quote h1 {
+    margin: 0;
+}
+
+.quote p {
+    text-align: right;
+    margin: 0;
+}
+
+.quote p sup {
+    font-size: 7px;
+}
+
+.quote {
+    display: flex;
+    flex-flow: column;
+    justify-content: inherit;
+    line-height: 20px;
+}
+
+#bag {
+    display: flex;
+    align-items: center;
+}
+
+#connexion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+
+}
+
+#menu h1 {
+    margin-left: 20px;
+}
+
+.right button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+}
+
+nav h1 {
+    font-family: 'Avenir Book';
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav ul li button {
+    display: flex;
+    background: none;
+    color: var(--color-white);
+    padding: 2px 40px;
+    border: 1px solid var(--color-white);
+    border-radius: 50px;
+    margin: 0;
+}
+
+nav ul li h1 {
+    font-family: 'Avenir Book';
+    text-transform: uppercase;
+    margin-left: 15.79px;
+}
+
+.vl {
+    border-left: 0.5px solid var(--color-white);
+    height: 30px;
+    margin: 0;
+    opacity: 0.6;
+}
+
+#line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .left ul li:nth-child(2):hover:before,
+nav .left ul li:nth-child(3):hover:before {
+    font-weight: 800;
+    content: "";
+    position: absolute;
+    background: var(--color-alabaster);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    top: 25%;
+}
+
+#connexion:hover>* {
+    color: black;
+    background-color: white;
+}
+
+#connexion:hover img {
+    filter: invert(0%) sepia(4%) saturate(6761%) hue-rotate(235deg) brightness(55%) contrast(88%);
+
+}
+
+#bag:hover {
+    transform: rotate(15deg);
+    transition: 0.5s;
+}
