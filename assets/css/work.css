@@ -1,0 +1,12 @@
+.work h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--color-limed-spruce);
+    line-height: 67px;
+    text-align: center;
+}
+
+.work .steps, .steps .step {
+    display: flex;
+}
