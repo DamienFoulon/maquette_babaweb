@@ -6,6 +6,7 @@
 @import url('header.css');
 @import url('work.css');
 @import url('products.css');
+@import url('offers.css');
 
 body {
     margin: 0;
@@ -28,4 +29,29 @@ body {
     --color-boulder: #777777;
     --color-grey-goose: #D1D1D1;
     --color-shuttle-grey: #5C6D72;
+}
+
+.text-line {
+    font-family: 'Avenir Book';
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    color: var(--color-limed-spruce);
+}
+
+.text-line:hover > hr {
+    width: 500px;
+    transition: all 0.5s ease;
+}
+
+.text-line hr {
+    width: 200px;
+    margin: 10px;
+}
+
+.text-line p {
+    margin: 0 20px;
 }

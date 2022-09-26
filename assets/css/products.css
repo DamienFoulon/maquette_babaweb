@@ -12,7 +12,7 @@
 
 .products .carroussel .slider {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     margin-top: 5em;
 }
 
@@ -22,4 +22,8 @@
 
 .item:nth-child(even) {
     margin-top: 6em;
+}
+
+.slider > * {
+    user-select: none;
 }

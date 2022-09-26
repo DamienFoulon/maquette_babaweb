@@ -1,0 +1,23 @@
+.offers {
+    margin-top: 10em;
+}
+
+.offers h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: var(--color-limed-spruce);
+    text-align: center;
+    font-weight: 500;
+}
+
+.box-offer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-limed-spruce);
+    width: 1720px;
+    height: 30%;
+}
+
+.offer {
+    margin: 2em;
+}
