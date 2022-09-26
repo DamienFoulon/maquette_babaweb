@@ -1,3 +1,7 @@
+.work {
+    margin-top: 10em;
+}
+
 .work h1 {
     font-family: 'Playfair Display', serif;
     font-size: 50px;
@@ -17,28 +21,104 @@
 .work .steps li {
     display: flex;
     position: relative;
+    width: 71%;
+    padding: 0;
+    margin: 15px 0 15px 0;
 }
 
-.work .step {
-    margin: 0 100px;
-    float: left;
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.step {
+    flex-direction: column;
+}
+
+.step img {
+    width: 21px;
+    height: 25px;
+}
+
+.step h2 {
+    font-size: 18px;
+    width: 229px;
+    font-family: Avenir Book;
+    color: var(--color-scarlet);
+    font-weight: bold;
 }
 
 .line {
     content: "";
-    background: var(--color-scarlet);
-    width: 60%;
+    background: rgba(190, 10, 28, 0.2);
+    width: 70%;
     height: 2px;
-    position: absolute;
-    bottom: -200px;
 }
 
 .dot {
     content: "";
     background: var(--color-scarlet);
-    width: 40px;
-    height: 40px;
+    width: 135px;
+    height: 135px;
     border-radius: 50%;
-    position: absolute;
-    bottom: -15px;
+    position: relative;
+    top: -70px;
+    left: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Avenir Book;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.alllittle {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    position: relative;
+    left: -69px;
+}
+
+.littledot {
+    width: 31px;
+    height: 31px;
+    background: var(--color-scarlet);
+    border-radius: 50%;
+    top: -14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Avenir Book;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 10px #F9CED2;
+}
+
+.dot {
+    box-shadow: 0px 0px 2px 14px #F9CED2;
+}
+
+.dot:hover {
+    box-shadow: 0px 0px 2px 18px #F9CED2;
+}
+
+.stepproduct h2 {
+    font-size: 18px;
+    font-family: Avenir Book;
+    width: 229px;
+    font-weight: normal;
+}
+
+.stepproduct span {
+    font-weight: bold;
 }

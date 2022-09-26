@@ -1,4 +1,25 @@
 .products {
+    margin-top: 10em;
+}
+
+.products h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: var(--color-limed-spruce);
+    text-align: center;
+    font-weight: 500;
+}
+
+.products .carroussel .slider {
     display: flex;
-    justify-content: center;
+    overflow-x: scroll;
+    margin-top: 5em;
+}
+
+.item {
+    margin: 0 2em;
+}
+
+.item:nth-child(even) {
+    margin-top: 6em;
 }
