@@ -1,0 +1,35 @@
+.partners {
+    margin-top: 10em;
+}
+
+.partners h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: var(--color-limed-spruce);
+    text-align: center;
+    font-weight: 500;
+}
+
+.partners-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.partners-box > * {
+    margin: 0 2em;
+}
+
+.text {
+    width: 35%;
+    font-family: 'Avenir Book';
+    color: var(--color-boulder);
+}
+
+.text h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--color-limed-spruce);
+}

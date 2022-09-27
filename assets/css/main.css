@@ -7,6 +7,7 @@
 @import url('work.css');
 @import url('products.css');
 @import url('offers.css');
+@import url('partners.css');
 
 body {
     margin: 0;
@@ -25,6 +26,7 @@ body {
     --color-pastel-pink: #F9CED2;
     --color-scarlet: #BE0A1C;
     --color-dark-jungle-green: #242424;
+    --color-dark-jungle-green-95: #242424CC;
     --color-alabaster: #FAFAFA;
     --color-boulder: #777777;
     --color-grey-goose: #D1D1D1;
@@ -54,4 +56,8 @@ body {
 
 .text-line p {
     margin: 0 20px;
+}
+
+.white {
+    color: var(--color-white);
 }
