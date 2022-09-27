@@ -16,14 +16,14 @@
     margin-top: 5em;
 }
 
-.item {
+.products .item {
     margin: 0 2em;
 }
 
-.item:nth-child(even) {
+.products .item:nth-child(even) {
     margin-top: 6em;
 }
 
-.slider > * {
+.products .slider > * {
     user-select: none;
 }
