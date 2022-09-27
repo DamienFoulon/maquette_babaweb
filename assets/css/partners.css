@@ -1,5 +1,5 @@
 .partners {
-    margin-top: 10em;
+    margin: 10em 0;
 }
 
 .partners h1 {
@@ -22,7 +22,7 @@
     margin: 0 2em;
 }
 
-.text {
+.partners .text {
     width: 35%;
     font-family: 'Avenir Book';
     color: var(--color-boulder);

@@ -1,0 +1,75 @@
+footer .container {
+    display: flex;
+    position: relative;
+}
+
+footer .container #left {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 30%;
+    height: 50vh;
+    background-color: var(--color-limed-spruce);
+    z-index: 0;
+}
+
+.grid-item {
+    border: 1px solid var(--color-baltic-sea);
+    opacity: 0.4;
+}
+
+footer .container #right {
+    width: 70%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: var(--color-shuttle-grey);
+}
+
+.grid-container {
+    display: flex;
+    position: absolute;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: left;
+    width: 100%;
+    height: 50vh;
+}
+
+.grid-fill {
+    font-family: 'Avenir Book';
+    font-size: 12px;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 1em;
+    width: 30%;
+    height: 50%;
+    z-index: 3;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.phone > * {
+    margin: 0 0.5em;
+}
+
+.grid-fill .item {
+    width: 30%;
+    margin: 0;
+}
+
+.both {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    width: 100%;
+    height: 50%;
+    margin-top: 1em;
+}
