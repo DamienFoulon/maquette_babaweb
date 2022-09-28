@@ -93,6 +93,7 @@ footer .container #right {
 .footer-infos {
     color: var(--color-white);
     width: 85%;
+    height: 240px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -157,4 +158,51 @@ footer .container #right {
 .footer-links ul li {
     list-style: none;
     margin: 0 1em;
+}
+
+.goto-top {
+    height: 240px;
+}
+
+.goto-top .text {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.goto-top .vl {
+    height: 70px;
+}
+
+.goto-top > * {
+    margin: 1.5em 0;
+}
+
+.goto-top:hover > .vl {
+    height: 50px;
+}
+
+.goto-top > .text > * {
+    margin: 0.5em 0;
+}
+
+.goto-top:hover > .text {
+    height: 90%;
+}
+
+.goto-top:hover > .text > * {
+    margin: 1em 0;
+}
+
+.goto-top .text p {
+    cursor: default;
+    font-family: 'Avenir Book';
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 0;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 0px;
 }
