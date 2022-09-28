@@ -18,6 +18,8 @@ footer .container #left {
 }
 
 footer .container #right {
+    display: flex;
+    flex-direction: column;
     width: 70%;
     height: 50vh;
     background: var(--color-shuttle-grey);
@@ -86,4 +88,66 @@ footer .container #right {
     flex-direction: column;
     text-align: center;
     line-height: 150%;
+}
+
+.footer-infos {
+    color: var(--color-white);
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-infos h1 {
+    font-size: 34px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+}
+
+.footer-infos ul {
+    padding: 0%;
+}
+
+.footer-products,
+.footer-about,
+.footer-contact {
+    width: 27%;
+}
+
+.footer-infos ul li {
+    list-style: none;
+    font-family: 'Avenir Book';
+    font-weight: lighter;
+    font-size: 14px;
+    color: var(--color-white);
+}
+
+.footer-infos ul .bottom-list {
+    margin-top: 1em;
+}
+
+.footer-infos ul .bottom-list li {
+    font-weight: bold;
+}
+
+.footer-infos ul li:hover {
+    list-style: inside;
+    padding-left: 2px;
+    transition: all 0.5s ease;
+}
+
+.footer-links {
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.footer-links ul li {
+    list-style: none;
+    margin: 0 1em;
 }
