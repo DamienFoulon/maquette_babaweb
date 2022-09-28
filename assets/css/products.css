@@ -17,7 +17,52 @@
 }
 
 .products .item {
+    position: relative;
     margin: 0 2em;
+    width: 406px;
+    height: 600px;
+}
+
+.products .item img {
+    z-index: 1;
+}
+
+.products .item .item-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, var(--color-limed-spruce-25)0%, var(--color-limed-spruce-95)100%);
+    position: absolute;
+    width: 406px;
+    height: 600px;
+    opacity: 0;
+}
+
+.products .item .item-hover:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.products .item-hover > * {
+    color: var(--color-white);
+    font-family: 'Avenir Book';
+    font-weight: 500;
+}
+
+.products .item-hover h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.products .item-hover a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-weight: 500;
+    border: 1px solid var(--color-white);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 1em 0 2em 0;
 }
 
 .products .item:nth-child(even) {

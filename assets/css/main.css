@@ -59,6 +59,12 @@ body {
     margin: 0 20px;
 }
 
+.vl {
+    border-left: 1px solid var(--color-white);
+    height: 100px;
+    margin: 0 20px;
+}
+
 .white {
     color: var(--color-white);
 }
