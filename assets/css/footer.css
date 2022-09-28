@@ -137,6 +137,8 @@ footer .container #right {
 }
 
 .footer-links {
+    font-family: 'Avenir Book';
+    color: var(--color-white);
     position: absolute;
     bottom: 0;
 }
@@ -144,7 +146,6 @@ footer .container #right {
 .footer-links ul {
     display: flex;
     flex-direction: row;
-    align-items: end;
 }
 
 .footer-links ul li {

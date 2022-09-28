@@ -62,3 +62,7 @@ body {
 .white {
     color: var(--color-white);
 }
+
+bold {
+    font-weight: bold;
+}
