@@ -19,7 +19,8 @@ footer .container #left {
 
 footer .container #right {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     width: 70%;
     height: 50vh;
     background: var(--color-shuttle-grey);
@@ -88,6 +89,12 @@ footer .container #right {
     flex-direction: column;
     text-align: center;
     line-height: 150%;
+}
+
+.footer-parts {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
 .footer-infos {
@@ -161,45 +168,28 @@ footer .container #right {
 }
 
 .goto-top {
-    height: 240px;
-}
-
-.goto-top .text {
     display: flex;
-    height: 75%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .goto-top .vl {
-    background: var(--color-baltic-sea);
-    height: 68%;
-}
-
-.goto-top > * {
-    margin: 1em 0;
-}
-
-.goto-top:hover > .vl {
+    border-left: 2  px solid var(--color-baltic-sea);
     height: 30%;
 }
 
-.goto-top > .text > * {
-    margin: 0.5em 0;
-}
-
-.goto-top:hover > .text > p {
-    margin-top: 1.5em;
+.goto-top .text {
+    color: var(--color-white);
+    margin: 0;
+    padding: 0;
 }
 
 .goto-top .text p {
-    cursor: default;
     font-family: 'Avenir Book';
+    font-size: 14px;
     text-transform: uppercase;
-    font-size: 10px;
-    margin: 0;
     writing-mode: vertical-lr;
     text-orientation: upright;
-    letter-spacing: 0px;
+    height: 25%;
 }
