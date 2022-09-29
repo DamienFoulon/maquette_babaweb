@@ -184,7 +184,8 @@ footer .container #right {
 
 .goto-top .vl {
     border: 1px solid var(--color-baltic-sea);
-    height: 30%;
+    height: 50%;
+    margin: 0 20px;
 }
 
 .goto-top>* {
@@ -227,4 +228,14 @@ footer .container #right {
     writing-mode: vertical-lr;
     text-orientation: upright;
     letter-spacing: 0px;
+}
+
+.rotate-left:hover {
+    transform: rotate(-30deg);
+    transition: all 0.5s ease;
+}
+
+.rotate-right:hover {
+    transform: rotate(30deg);
+    transition: all 0.5s ease;
 }

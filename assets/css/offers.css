@@ -115,3 +115,7 @@
     opacity: 1;
     transition: all 0.5s ease;
 }
+
+.offers .text-line {
+    margin-bottom: 5em;
+}
