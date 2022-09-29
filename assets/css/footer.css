@@ -166,34 +166,31 @@ footer .container #right {
 
 .goto-top .text {
     display: flex;
-    height: 80%;
+    height: 75%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .goto-top .vl {
-    height: 70px;
+    background: var(--color-baltic-sea);
+    height: 68%;
 }
 
 .goto-top > * {
-    margin: 1.5em 0;
+    margin: 1em 0;
 }
 
 .goto-top:hover > .vl {
-    height: 50px;
+    height: 30%;
 }
 
 .goto-top > .text > * {
     margin: 0.5em 0;
 }
 
-.goto-top:hover > .text {
-    height: 90%;
-}
-
-.goto-top:hover > .text > * {
-    margin: 1em 0;
+.goto-top:hover > .text > p {
+    margin-top: 1.5em;
 }
 
 .goto-top .text p {
